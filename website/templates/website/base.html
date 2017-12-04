@@ -1,0 +1,59 @@
+{% load static %}
+
+<html>
+<head>
+	<title>Companima</title>
+	<script src="/static/website/js/jquery-3.2.1.min.js" type="text/javascript"></script>
+	<script src="/static/website/js/bootstrap.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="/static/website/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/static/website/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="{% static 'website/css/main.css' %}">
+</head>
+<body>
+	<header>
+		<div class='header-inner'>
+			<div class='header-left'>
+				<nav class='header-nav'>
+					<div class='header-nav-inner'>
+						<a class='header-nav-item' href="/">ABOUT US</a>
+						<a class='header-nav-item' href="/team">OUR TEAM</a>
+						<a class='header-nav-item' href="/pets">PET LISTINGS</a>
+					</div>
+				</nav>
+			</div>
+			<div class='header-center'>
+				<a href="/">COMPANIMA</a>
+			</div>
+			<div class='header-right'>
+				<nav class='header-nav'>
+					<div class='header-nav-inner'>
+						<a class='header-nav-item' href="/volunteer">VOLUNTEER</a>
+						<a class='header-nav-item' href="/donate">DONATE</a>
+						<a class='header-nav-item' href="/contact">CONTACT US</a>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<div class="site-inner">
+		{% block content %}
+		{% endblock %}
+	</div>
+
+	<footer class='footer'>
+		<div class='footer-inner'>
+			<nav class='footer-nav'>
+				<div class='footer-nav-group'>
+					<a class='footer-nav-item' href="#">TERMS OF SERVICE</a>
+					<a class='footer-nav-item' href="#">PRIVACY POLICY</a>
+					<a class='footer-nav-item' href="/volunteer">VOLUNTEER</a>
+					<a class='footer-nav-item' href="/donate">DONATE</a>
+					<a class='footer-nav-item' href="/contact">CONTACT US</a>
+				</div>
+			</nav>
+		</div>
+	</footer>
+
+</body>
+</html>
