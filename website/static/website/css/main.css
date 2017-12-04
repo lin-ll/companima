@@ -208,41 +208,41 @@ select {
 	text-transform: none;
 
 	color: inherit;
-    font: inherit;
-    margin: 0;
+	font: inherit;
+	margin: 0;
 
-    -webkit-appearance: menulist;
-    box-sizing: border-box;
-    align-items: center;
-    white-space: pre;
-    -webkit-rtl-ordering: logical;
-    background-color: white;
-    cursor: default;
-    border-width: 1px;
+	-webkit-appearance: menulist;
+	box-sizing: border-box;
+	align-items: center;
+	white-space: pre;
+	-webkit-rtl-ordering: logical;
+	background-color: white;
+	cursor: default;
+	border-width: 1px;
 
-    border-radius: 5px;
+	border-radius: 5px;
 
-    text-rendering: auto;
-    letter-spacing: normal;
-    word-spacing: normal;
-    text-indent: 0px;
-    text-shadow: none;
-    display: inline-block;
-    text-align: start;
+	text-rendering: auto;
+	letter-spacing: normal;
+	word-spacing: normal;
+	text-indent: 0px;
+	text-shadow: none;
+	display: inline-block;
+	text-align: start;
 
-    -webkit-writing-mode: horizontal-tb;
+	-webkit-writing-mode: horizontal-tb;
 }
 
 select:not(:-internal-list-box) {
-    overflow: visible !important;
+	overflow: visible !important;
 }
 
 select, input[type="color" i][list] {
-    background-color: rgb(248, 248, 248);
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgb(166, 166, 166);
-    border-image: initial;
+	background-color: rgb(248, 248, 248);
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(166, 166, 166);
+	border-image: initial;
 }
 
 .header-inner {
@@ -610,12 +610,20 @@ select, input[type="color" i][list] {
 	width: 33.3333%;
 }
 
+.sqs-col-5 {
+	width: 41.6667%;
+}
+
 .sqs-col-8 {
 	width: 66.6667%;
 }
 
 .sqs-col-10 {
 	width: 83.3333%;
+}
+
+.sqs-col-12 {
+	width: 100%;
 }
 
 .sqs-block {
@@ -839,4 +847,20 @@ select, input[type="color" i][list] {
 	opacity: .7;
 	display: block;
 	white-space: pre-wrap;
+}
+
+#dog-1 {
+	background: url('../image3.jpg');
+	background-size: cover;
+}
+
+#dog-2 {
+	background: url('../image4.jpg');
+	background-size: cover;
+}
+
+.image-block-wrapper {
+	line-height: 0;
+	text-align: center;
+	position: relative;
 }
