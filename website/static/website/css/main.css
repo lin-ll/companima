@@ -168,8 +168,81 @@ input {
 	border-image: initial;
 }
 
+textarea {
+	overflow: auto;
+
+	color: inherit;
+	font: inherit;
+	margin: 0;
+
+	-webkit-appearance: textarea;
+	background-color: white;
+	-webkit-rtl-ordering: logical;
+	flex-direction: column;
+	resize: auto;
+	cursor: auto;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	border-width: 1px;
+	border-style: solid;
+	border-color: initial;
+	border-image: initial;
+	padding: 2px;
+
+	text-rendering: auto;
+	letter-spacing: normal;
+	word-spacing: normal;
+	text-transform: none;
+	text-indent: 0px;
+	text-shadow: none;
+	display: inline-block;
+	text-align: start;
+	-webkit-writing-mode: horizontal-tb;
+}
+
 input:focus, textarea:focus {
 	background-color: #fff;
+}
+
+select {
+	text-transform: none;
+
+	color: inherit;
+    font: inherit;
+    margin: 0;
+
+    -webkit-appearance: menulist;
+    box-sizing: border-box;
+    align-items: center;
+    white-space: pre;
+    -webkit-rtl-ordering: logical;
+    background-color: white;
+    cursor: default;
+    border-width: 1px;
+
+    border-radius: 5px;
+
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+
+    -webkit-writing-mode: horizontal-tb;
+}
+
+select:not(:-internal-list-box) {
+    overflow: visible !important;
+}
+
+select, input[type="color" i][list] {
+    background-color: rgb(248, 248, 248);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(166, 166, 166);
+    border-image: initial;
 }
 
 .header-inner {
@@ -659,6 +732,18 @@ input:focus, textarea:focus {
 	margin-left: 2%;
 }
 
+.field-list .fields .two-digits {
+	width: 3.5em !important;
+}
+
+.field-list .fields .three-digits {
+	width: 4.2em !important;
+}
+
+.field-list .fields .four-digits {
+	width: 4.8em !important;
+}
+
 .field-list .fields .field {
 	width: 48%;
 	float: left;
@@ -678,8 +763,19 @@ input:focus, textarea:focus {
 	display: none;
 }
 
+.field-list select {
+	margin: 6px 0 4px;
+	max-width: 100%;
+}
+
+.field-list textarea {
+	min-height: 100px;
+	resize: vertical;
+}
+
 .field .caption {
 	font-size: 12px;
+	font-weight: 300;
 }
 
 .field-element {
@@ -735,4 +831,12 @@ input:focus, textarea:focus {
 .sqs-system-button:hover {
 	color: #fff;
 	background-color: #707070;
+}
+
+.description {
+	padding: .5em 0 .5em;
+	font-size: 12px;
+	opacity: .7;
+	display: block;
+	white-space: pre-wrap;
 }
