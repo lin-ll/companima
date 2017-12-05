@@ -889,6 +889,26 @@ select, input[type="color" i][list] {
 	background-size: cover;
 }
 
+#nick {
+	background: url('../image11.jpg');
+	background-size: cover;
+}
+
+#danielle {
+	background: url('../image12.jpg');
+	background-size: cover;
+}
+
+#tommy {
+	background: url('../image13.jpg');
+	background-size: cover;
+}
+
+#lucy {
+	background: url('../image14.jpg');
+	background-size: cover;
+}
+
 .image-block-wrapper {
 	line-height: 0;
 	text-align: center;
