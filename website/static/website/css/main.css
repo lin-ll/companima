@@ -859,6 +859,36 @@ select, input[type="color" i][list] {
 	background-size: cover;
 }
 
+#dog-3 {
+	background: url('../image5.jpg');
+	background-size: cover;
+}
+
+#dog-4 {
+	background: url('../image6.jpg');
+	background-size: cover;
+}
+
+#cat-1 {
+	background: url('../image7.jpg');
+	background-size: cover;
+}
+
+#cat-2 {
+	background: url('../image8.jpg');
+	background-size: cover;
+}
+
+#cat-3 {
+	background: url('../image9.jpg');
+	background-size: cover;
+}
+
+#cat-4 {
+	background: url('../image10.jpg');
+	background-size: cover;
+}
+
 .image-block-wrapper {
 	line-height: 0;
 	text-align: center;
